@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>Responsive Image Gallery</h1>
+
+<!-- FILTER BUTTONS -->
+<div class="filters">
+    <button onclick="filterImages('all')">All</button>
+    <button onclick="filterImages('nature')">Nature</button>
+    <button onclick="filterImages('city')">City</button>
+    <button onclick="filterImages('animals')">Animals</button>
+</div>
+
+<div class="gallery">
+    <img src="https://picsum.photos/id/1015/400/300" class="nature" onclick="openLightbox(0)">
+    <img src="https://picsum.photos/id/1011/400/300" class="nature" onclick="openLightbox(1)">
+    <img src="https://picsum.photos/id/1012/400/300" class="animals" onclick="openLightbox(2)">
+    <img src="https://picsum.photos/id/57/367/267" class="city" onclick="openLightbox(3)">
+    <img src="https://picsum.photos/id/1025/400/300" class="animals" onclick="openLightbox(4)">
+    <img src="https://picsum.photos/id/1031/400/300" class="city" onclick="openLightbox(5)">
+</div>
+
+<!-- LIGHTBOX -->
+<div class="lightbox" id="lightbox">
+    <span class="close" onclick="closeLightbox()">×</span>
+    <span class="nav-btn prev" onclick="prevImage()">❮</span>
+    <img id="lightbox-img">
+    <span class="nav-btn next" onclick="nextImage()">❯</span>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
