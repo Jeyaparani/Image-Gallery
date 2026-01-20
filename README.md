@@ -1,2 +1,2 @@
 # Image-Gallery
-Image Gellary Web Application
+Image Gallery Web Application
